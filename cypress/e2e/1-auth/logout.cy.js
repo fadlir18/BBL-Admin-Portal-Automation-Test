@@ -1,4 +1,4 @@
-it.only('login test', function() {
+it.only('logout test', function() {
     cy.visit('https://cms.mysuperindo.co.id/')
     cy.get(':nth-child(3) > .uk-inline > .uk-input').type('fadli')
     cy.get('.parent-password-form > .uk-inline > .uk-input').click()
