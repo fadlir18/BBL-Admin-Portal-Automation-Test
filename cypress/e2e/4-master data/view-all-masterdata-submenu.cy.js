@@ -1,9 +1,7 @@
+/// <reference types="cypress" />
+
+import '../1-auth/login.cy'
 it.only('view all masterdata', function() {
-    cy.visit('https://qa-cms.mysuperindo.co.id/login')
-    cy.get(':nth-child(3) > .uk-inline > .uk-input').type('QATester')
-    cy.get('.parent-password-form > .uk-inline > .uk-input').click()
-    cy.get('.parent-password-form > .uk-inline > .uk-input').type('Brilliant77!')
-    cy.get('.uk-button.uk-width-1-1').click()
     cy.wait(1000)
     cy.get(':nth-child(3) > .router-link-active > .uk-nav > .uk-parent > .parent-text').click()
     cy.wait(1000)

@@ -1,9 +1,7 @@
-it.only('filtering active campaign', function () {
-    cy.visit('https://qa-cms.mysuperindo.co.id/login')
-    cy.get(':nth-child(3) > .uk-inline > .uk-input').type('QATester')
-    cy.get('.parent-password-form > .uk-inline > .uk-input').click()
-    cy.get('.parent-password-form > .uk-inline > .uk-input').type('Brilliant77!')
-    cy.get('.uk-button.uk-width-1-1').click()
+/// <reference types="cypress" />
+
+import '../1-auth/login.cy'
+it('filtering active campaign', function () {
     cy.wait(1000)
     cy.get('.uk-width-expand').scrollIntoView()
     cy.get('.uk-width-expand').select('Active').should('have.value', '1')
