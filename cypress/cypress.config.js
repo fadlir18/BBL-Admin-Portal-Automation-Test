@@ -1,8 +1,9 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: 'qh8jp2',
   e2e: {
-    baseUrl: 'https://qa-cms.mysuperindo.co.id',
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
   },
 });
