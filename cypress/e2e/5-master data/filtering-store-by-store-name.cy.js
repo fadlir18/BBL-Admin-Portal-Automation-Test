@@ -6,6 +6,7 @@ describe('view all masterdata', function() {
         cy.title().should('be.equal','Superindo CMS')
 
         //Navigating
+        .wait(2000)
         cy.get(':nth-child(3) > .router-link-active > .uk-nav > .uk-parent > .parent-text').click().wait(500)
         cy.get(':nth-child(3) > .router-link-active > .uk-nav > .uk-parent > .uk-nav-sub > :nth-child(2)').click()
 
