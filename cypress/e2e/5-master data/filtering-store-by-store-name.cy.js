@@ -2,7 +2,7 @@ describe('view all masterdata', function() {
     it('view all masterdata', function() {
 
         //Login
-        cy.login('QATester','Brilliant77!')
+        cy.login('QATester','OttoDigital2023!')
         cy.title().should('be.equal','Superindo CMS')
 
         //Navigating

@@ -1,7 +1,7 @@
 describe('add campaign', function() {
 	it('add campaign', function () {
 
-		cy.login('QATester','Brilliant77!')
+		cy.login('QATester','OttoDigital2023!')
 		cy.title().should('be.equal','Superindo CMS')
 	
 		// Add campaign

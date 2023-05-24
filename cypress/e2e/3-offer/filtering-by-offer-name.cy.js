@@ -1,7 +1,7 @@
 describe('filtering by offer id', function() {
 	it('filtering by offer id', function () {
 		//Login
-		cy.login('QATester','Brilliant77!')
+		cy.login('QATester','OttoDigital2023!')
 		cy.title().should('be.equal','Superindo CMS')
 
 		//Filtering

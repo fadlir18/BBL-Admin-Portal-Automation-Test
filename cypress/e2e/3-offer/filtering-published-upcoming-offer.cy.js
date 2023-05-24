@@ -1,7 +1,7 @@
 describe('filtering publisher-live offer', function() {
 	it('filtering published-live offer', function () {
 	
-		cy.login('QATester','Brilliant77!')
+		cy.login('QATester','OttoDigital2023!')
 		cy.title().should('be.equal','Superindo CMS')
 	
 	// Filtering

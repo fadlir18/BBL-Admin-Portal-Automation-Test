@@ -2,7 +2,7 @@ describe('View all consumer', function() {
     it('View all consumer', function() {
 
         //Login
-        cy.login('QATester','Brilliant77!')
+        cy.login('QATester','OttoDigital2023!')
         cy.title().should('be.equal','Superindo CMS')
 
 		//Check submenu

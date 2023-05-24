@@ -1,7 +1,7 @@
 describe('filtering by campaign id', function() {
 	it('filtering by campaign id', function () {
 	
-		cy.login('QATester','Brilliant77!')
+		cy.login('QATester','OttoDigital2023!')
 		cy.title().should('be.equal','Superindo CMS')
 	
 	// Filtering by campaign id

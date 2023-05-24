@@ -1,6 +1,6 @@
 describe('view all campaign', function() {
     it('view all campaign', function () {
-        cy.login('QATester','Brilliant77!')
+        cy.login('QATester','OttoDigital2023!')
         cy.title().should('be.equal','Superindo CMS')
         cy.wait(1000)
         cy.get('.active').click()
