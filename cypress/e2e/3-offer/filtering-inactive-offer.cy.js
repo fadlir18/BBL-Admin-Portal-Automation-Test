@@ -15,6 +15,6 @@ describe('filtering inactive offer', function() {
 		cy.wait(1000)
 		cy.get('.uk-flex-bottom > .uk-flex-middle').scrollIntoView().click()
 		cy.wait(1000)
-		cy.get('tbody > tr > :nth-child(13)').scrollIntoView().should('contain', 'Inactive')
+		cy.get(':nth-child(1) > :nth-child(13) > [data-v-00bd915c=""] > .label').scrollIntoView({ duration: 5000 }).should('contain', 'Inactive')
 	})
 })

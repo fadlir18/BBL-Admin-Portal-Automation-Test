@@ -5,7 +5,7 @@ Cypress.Commands.add('login', (username, password) => {
     cy.get('.parent-password-form > .uk-inline > .uk-input').click()
     cy.get('.parent-password-form > .uk-inline > .uk-input').type(password)
 	cy.get('.uk-button.uk-width-1-1').click()
-	cy.url().should('include', 'https://qa-cms.mysuperindo.co.id/admin/campaign/campaigns')
+	cy.url().should('include', 'https://staging-cms.mysuperindo.co.id/admin/campaign/campaigns')
   });
 
 Cypress.Commands.add('logout', () => {
