@@ -1,5 +1,6 @@
 describe('filtering active campaign', function() {
     it('filtering active campaign', function () {
+        
         // Login
         cy.login('QATester','Brilliant77!')
 		cy.title().should('be.equal','Superindo CMS')
