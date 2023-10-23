@@ -4,6 +4,6 @@ module.exports = defineConfig({
   projectId: 'qh8jp2',
   e2e: {
     experimentalRunAllSpecs: true,
-    baseUrl: 'https://staging-cms.mysuperindo.co.id',
+    baseUrl: 'https://qa-ecms.mysuperindo.co.id/',
   },
 });
