@@ -8,8 +8,8 @@ describe('filtering inactive offer', function () {
 		// Navigating
 		cy.get('.uk-button').click()
 		cy.wait(1000)
-		cy.get(':nth-child(3) > .router-link-active > .uk-nav > .uk-parent > .parent-text').click()
-		cy.get(':nth-child(3) > .router-link-active > .uk-nav > .uk-parent > .uk-nav-sub > :nth-child(2)').click()
+		cy.get(':nth-child(2) > .router-link-active > .uk-nav > .uk-parent > .parent-text').click()
+		cy.get(':nth-child(2) > .router-link-active > .uk-nav > .uk-parent > .uk-nav-sub > :nth-child(2)').click()
 
 		// Filtering
 		cy.wait(1000)

@@ -8,12 +8,12 @@ describe("Filtering consumer by Phone number", function () {
 		// Navigating
 		cy.get('.uk-button').click()
 		cy.wait(1000)
-		cy.get(':nth-child(6) > .router-link-active > .uk-nav > .uk-parent > .parent-text').click()
-		cy.get(':nth-child(6) > .router-link-active > .uk-nav > .uk-parent > .uk-nav-sub > :nth-child(1)').click()
+		cy.get(':nth-child(5) > .router-link-active > .uk-nav > .uk-parent > .parent-text').click()
+		cy.get(':nth-child(5) > .router-link-active > .uk-nav > .uk-parent > .uk-nav-sub > :nth-child(1)').click()
 
 		//Input filter
 		cy.wait(10000)
-		cy.get(':nth-child(2) > .uk-inline > .uk-input').click().type('085884862757', { delay: 50 })
+		cy.get(':nth-child(2) > .uk-inline > .uk-input').click().type('085884862757', { delay: 100 })
 		cy.get('.uk-flex-bottom > .uk-flex-middle').click()
 
 		//Validate data
