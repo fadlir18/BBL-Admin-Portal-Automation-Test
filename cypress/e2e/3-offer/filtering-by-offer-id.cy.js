@@ -13,9 +13,9 @@ describe('filtering by offer id', function() {
 
 		//Filtering
 		cy.wait(2000)
-		cy.get('.uk-padding-remove-left > .uk-inline > .uk-input').click().type('001/25/10/2023', { delay: 50 })
+		cy.get('.uk-padding-remove-left > .uk-inline > .uk-input').click().type('001/03/11/2023', { delay: 50 })
 		cy.get('.uk-flex-bottom > .uk-flex-middle').click()
-		cy.get('tbody > tr > :nth-child(2)').should('contain', '001/25/10/2023')
+		cy.get('tbody > tr > :nth-child(2)').should('contain', '001/03/11/2023')
 		
 	})
 })

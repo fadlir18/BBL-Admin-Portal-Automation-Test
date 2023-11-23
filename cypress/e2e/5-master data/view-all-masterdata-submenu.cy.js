@@ -1,5 +1,5 @@
-describe('view all masterdata', function() {
-    it('view all masterdata', function() {
+describe('View all masterdata submenu', function() {
+    it('View all masterdata submenu', function() {
 
 		// Login
 		cy.login('QATester', 'Brilliant77!')

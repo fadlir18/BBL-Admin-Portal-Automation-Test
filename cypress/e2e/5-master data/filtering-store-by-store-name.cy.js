@@ -1,5 +1,5 @@
-describe('view all masterdata', function() {
-    it('view all masterdata', function() {
+describe('Filtering store by store name', function() {
+    it('Filtering store by store name', function() {
 
 		// Login
 		cy.login('QATester', 'Brilliant77!')

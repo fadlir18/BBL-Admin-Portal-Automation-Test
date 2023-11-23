@@ -1,5 +1,5 @@
-describe('view all masterdata', function() {
-    it('view all masterdata', function() {
+describe('Filternig consumer tag by name', function() {
+    it('Filternig consumer tag by name', function() {
 
 		// Login
 		cy.login('QATester', 'Brilliant77!')

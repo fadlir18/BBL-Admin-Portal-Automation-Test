@@ -13,8 +13,8 @@ describe('filtering by offer id', function() {
 
 		//Filtering
 		cy.wait(2000)
-		cy.get(':nth-child(2) > .uk-inline > .uk-input').click().type('PWP - INDOMIE MI GORENG ACEH PCK 90GR', { delay: 50 })
+		cy.get(':nth-child(2) > .uk-inline > .uk-input').click().type('Downy Parfum Collection 1350ML', { delay: 50 })
 		cy.get('.uk-flex-bottom > .uk-flex-middle').click()
-		cy.get('tbody > :nth-child(1) > :nth-child(3)').scrollIntoView().should('contain', 'PWP - INDOMIE MI GORENG ACEH PCK 90GR')
+		cy.get('tbody > :nth-child(1) > :nth-child(3)').scrollIntoView().should('contain', 'Downy Parfum Collection 1350ML')
 	})
 })
