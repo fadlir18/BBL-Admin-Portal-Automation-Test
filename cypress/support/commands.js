@@ -1,20 +1,16 @@
 
 Cypress.Commands.add('login', (username, password) => {
-    cy.visit('/login')
-    cy.get(':nth-child(3) > .uk-inline > .uk-input').type(username)
-    cy.get('.parent-password-form > .uk-inline > .uk-input').click()
-    cy.get('.parent-password-form > .uk-inline > .uk-input').type(password)
-    cy.get('.uk-fieldset > .uk-button').click()
-	  cy.url().should('include', 'https://qa-ecms.mysuperindo.co.id/admin/main-page')
-  });
+  cy.visit('/login')
+  cy.get('#username').type(username)
+  cy.get('#password').click()
+  cy.get('#password').type(password)
+  cy.get('#submitButton').click()
+  cy.wait(3000)
+  cy.url().should('include', 'https://admin.test.youtap-azuredev.net/')
+});
 
 Cypress.Commands.add('logout', () => {
-  cy.get('.uk-button').click()
-  cy.wait(1000)
-	cy.get('.uk-navbar-toggle').click()
-  cy.get('.uk-navbar-dropdown > .uk-nav-default > :nth-child(3) > a').click()
-  cy.wait(1000)
-  cy.get('.uk-text-center > .red').click()
+  cy.get('#yt-left-logout > .img-icon').click()
 })
 
 // ***********************************************
