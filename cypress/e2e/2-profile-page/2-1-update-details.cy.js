@@ -1,6 +1,6 @@
-describe('Login', function() {
-    it('Login', function() {
-        cy.login('rebradeuweleu-19501','Order66!!!')
+describe('Update Details', function () {
+    it('Update Details', function () {
+        cy.login('rebradeuweleu-19501', 'Order66!!!')
 
         //Navigating
         cy.get('.nav > :nth-child(1) > .btn').click()
